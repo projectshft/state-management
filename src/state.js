@@ -15,7 +15,7 @@ const onUpdate = (callback) => {
   ON_UPDATE_CALLBACK = callback;
 };
 
-// Calls all the currently-registered callbacks with the current state of the
+// Calls the currently-registered callback with the current state of the
 // application. If no callback is registered, does nothing.
 const forceUpdate = () => {
   if (ON_UPDATE_CALLBACK) {
