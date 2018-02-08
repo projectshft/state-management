@@ -42,7 +42,7 @@ const sendEvent = (name, data) => {
   }, newState);
 
   // If the state was changed between the time we made the copy and after we
-  // passed it to `handleState`, we know we need to notify any listener that
+  // passed it to `handleEvent`, we know we need to notify any listener that
   // there was a change!
   if (!_.isEqual(newState, oldState)) {
     forceUpdate()
