@@ -49,6 +49,18 @@ const sendEvent = (name, data) => {
   }
 };
 
+// Requests a piece of state from the model using event names similar to sendEvent.
+// each request _may_ have some data that will help narrow down the scope of the 
+// state requested (e.g the id of the value desired)
+const queryState = (name,data) => {
+  if (name === 'getName') {
+    return state.name;
+  } else {
+    // If we don't know what kind of event this is, alert the developer!
+    throw new Error(`Unrecognized event: ${name}`);
+  }
+}
+
 // Given an event name and the current state of the application, should mutate
 // the state in-place as it sees fit.
 //
