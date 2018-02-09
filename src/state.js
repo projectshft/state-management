@@ -84,4 +84,6 @@ export {
   onUpdate,
 
   sendEvent,
+
+  queryState
 };
