@@ -54,7 +54,7 @@ const sendEvent = (name, data) => {
 // state requested (e.g the id of the value desired)
 const queryState = (name,data) => {
   if (name === 'getName') {
-    return state.name;
+    return STATE.name;
   } else {
     // If we don't know what kind of event this is, alert the developer!
     throw new Error(`Unrecognized event: ${name}`);
