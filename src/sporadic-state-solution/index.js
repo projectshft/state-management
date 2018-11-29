@@ -6,7 +6,7 @@ const UserContext = React.createContext();
 
 //grab the Consumer & Provider off of the context instance
 //each of these will have a context property that will contain the state we need
-//alternatively, we could user <UserContext.Consumer /> or <UserContext.Provider />
+//alternatively, we could use <UserContext.Consumer /> or <UserContext.Provider />
 const Consumer = UserContext.Consumer;
 const Provider = UserContext.Provider;
 
