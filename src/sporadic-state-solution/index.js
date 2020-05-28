@@ -41,7 +41,6 @@ class YoureLookingFor extends Component {
       </Consumer>
     );
   }
-  3;
 }
 
 // This is a simpler implementation where you can programmatically access the context object and do what you want with it.
