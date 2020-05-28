@@ -55,9 +55,16 @@ const sendEvent = (name, data) => {
 //
 // NOTE: This is where you should add support for any new events you want to
 // handle!
+// Examples:
+// sendEvent('addPost',{name:"Sean",text:"hi"})
+// sendEvent('removeAllPosts')
 const handleEvent = ({ name, data }, state) => {
   if (name === 'changeName') {
     state.name = data;
+  } else if (name === 'addPost') {
+    state.posts.push(data);
+  } else if (name === 'removeAllPosts') {
+    state.posts = [];
   } else {
     // If we don't know what kind of event this is, alert the developer!
     throw new Error(`Unrecognized event: ${name}`);
