@@ -65,7 +65,7 @@ const root = document.querySelector("#root");
 // Setup the provider with the default values
 //Note that we're passing an object as the value prop to the Provider, rather than just a boolean or single value. In doing this,
 //we're able to pass multiple properties to the single value prop:
-//i.e. value={{ isItLionel: true, isHandsome: false, instruments: ['piano', 'vocals', 'saxophone'] }}
+//i.e. value={{ isItLionel: true, isHandsome: true, instruments: ['piano', 'vocals', 'saxophone'] }}
 //we would then have access to all of these properties via context
 ReactDOM.render(
   <Provider value={{ isItLionel: true }}>
